@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<resources>
+
+    <color name="alohar_light_blue">#17bbfd</color>
+    <color name="alohar_light_blue2">#2e6da4</color>
+    <color name="alohar_green">#76B54E</color>
+    <color name="alohar_blue">#1F344D</color>
+
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_black">#000000</color>
+    <color name="text_heading">@color/alohar_green</color>
+    <color name="text_button">@color/alohar_green</color>
+    <color name="line_rectangle">@android:color/black</color>
+    <color name="text_divider">@color/alohar_blue</color>
+    <color name="bg_group_header">@color/alohar_blue</color>
+
+    <!-- colors for drawer menu -->
+    <color name="list_item_title">@color/text_black</color>
+    <color name="list_background">@color/alohar_blue</color>
+    <color name="list_background_pressed">@color/alohar_green</color>
+    <color name="list_divider">@color/alohar_green</color>
+
+
+</resources>

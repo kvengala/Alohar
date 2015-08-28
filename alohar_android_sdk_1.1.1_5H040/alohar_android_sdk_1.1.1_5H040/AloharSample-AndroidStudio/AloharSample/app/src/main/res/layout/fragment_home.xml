@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/TextViewDescription"
+            android:text="@string/intro_homepage_status"
+            android:id="@+id/introduction_status"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            style="@style/TextViewLabel"
+            android:text="@string/uid_label" />
+
+        <EditText
+            android:id="@+id/uid_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_button"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            style="@style/TextViewLabel"
+            android:text="@string/current_location_label" />
+
+        <TextView
+            android:id="@+id/current_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/listitem_padding"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/current_location_default" />
+
+        <TextView
+            style="@style/TextViewLabel"
+            android:text="@string/last_known_location_label" />
+
+        <TextView
+            android:id="@+id/last_known_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/listitem_padding"
+            android:layout_marginBottom="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/last_known_location_default" />
+
+        <Button
+            style="@style/ButtonText"
+            android:id="@+id/get_last_known_location_button"
+            android:text="@string/get_last_known_location_button"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            style="@style/TextViewDescription"
+            android:text="@string/intro_homepage_settings"
+            android:id="@+id/introduction_settings"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            style="@style/TextViewLabel"
+            android:text="@string/context_monitoring_label" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/listitem_padding"
+            android:paddingRight="@dimen/listitem_padding"
+            android:paddingBottom="@dimen/listitem_padding"
+            android:paddingTop="4dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/listitem_padding"
+                android:text="@string/context_monitoring_text"
+                android:gravity="center_vertical"/>
+            <Switch
+                android:id="@+id/context_monitoring_switch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:thumb="@drawable/apptheme_switch_inner_holo_light"
+                android:track="@drawable/apptheme_switch_track_holo_light"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewLabel"
+            android:text="@string/periodic_upload_wifi_only_label" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/listitem_padding"
+            android:paddingRight="@dimen/listitem_padding"
+            android:paddingBottom="@dimen/listitem_padding"
+            android:paddingTop="4dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/listitem_padding"
+                android:text="@string/periodic_upload_wifi_only_text"
+                android:layout_gravity="center_vertical"/>
+            <Switch
+                android:id="@+id/wifi_only_switch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:thumb="@drawable/apptheme_switch_inner_holo_light"
+                android:track="@drawable/apptheme_switch_track_holo_light"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/TextViewLabel"
+            android:text="@string/upload_label" />
+
+        <Button
+            style="@style/ButtonText"
+            android:id="@+id/upload_button"
+            android:text="@string/upload_button"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            style="@style/TextViewDescription"
+            android:text="@string/intro_homepage_logout"
+            android:id="@+id/introduction_logout"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            style="@style/TextViewLabel"
+            android:text="@string/logout_label" />
+
+        <Button
+            style="@style/ButtonText"
+            android:id="@+id/logout_button"
+            android:text="@string/logout_button"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

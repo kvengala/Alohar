@@ -1,0 +1,112 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alohar.sample"
+    android:versionCode="1"
+    android:versionName="1.1.1 5H040" >
+
+    <!-- permissions for the Alohar SDK -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:name=".ASApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ASLoginRegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ASMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+       <activity
+            android:name=".ASPlaceCorrectionDialogActivity"
+            android:label="Place Correction"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        
+       <activity
+            android:name=".ASUserStayDeletionDialogActivity"
+            android:label="UserStay Deletion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+
+        <activity
+            android:name=".ASImportantPlacesSuggestionsActivity"
+            android:label="Place Suggestions"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+
+        <!-- Required components to use Alohar SDK - Begin -->
+        <receiver
+            android:name="com.alohar.context.core.AcxBroadcastReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.alohar.context.core.AcxCoreService"
+            android:enabled="true" />
+
+        <!-- Required components to use Alohar SDK - End -->
+
+        <!-- Custom BroadcastReceiver implemented by AloharSample App to listen
+         for Alohar events. -->
+        <receiver
+            android:name=".ASAloharEventBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <!--  Optional -->
+            <intent-filter>
+                <action android:name="com.alohar.context.intent.action.CHECK_SYSTEM_SETTINGS" />
+            </intent-filter>
+            <!--  Optional -->
+            <intent-filter>
+                <action android:name="com.alohar.context.intent.action.POTENTIAL_USERSTAY" />
+            </intent-filter>
+            <!--  Optional -->
+            <intent-filter>
+                <action android:name="com.alohar.context.intent.action.USERSTAY" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Custom IntentService implemented by AloharSample App to handle Alohar events
+         from the custom BroadcastReceiver ASAloharEventBroadcastReceiver. -->
+        <service android:name=".ASAloharEventIntentService" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/place_suggestion_action_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/places_suggestion_actions_dialog_title"
+        android:textSize="@dimen/textsize_contextmenu_header"
+        android:textStyle="bold"
+        android:textColor="@color/alohar_green"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/place_suggestion_action_title"
+        android:background="@color/text_divider" />
+
+    <TextView
+        android:id="@+id/place_suggestion_action_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/divider"
+        android:text="@string/places_suggestion_action_heading_text"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/place_suggestion_action_placename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/place_suggestion_action_heading"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:hint="@string/places_suggestion_action_hint_placename"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/place_suggestion_action_placeaddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/place_suggestion_action_placename"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:hint="@string/places_suggestion_action_hint_placeaddress"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp"
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/place_suggestion_action_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="17dp"
+        android:layout_below="@+id/place_suggestion_action_reject"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/place_suggestion_action_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/place_suggestion_action_placeaddress"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="@string/action_accept"
+        android:textSize="@dimen/textsize_button"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <Button
+        android:id="@+id/place_suggestion_action_reject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/place_suggestion_action_accept"
+        android:layout_alignBottom="@+id/place_suggestion_action_accept"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/place_suggestion_action_accept"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_button"
+        android:text="@string/action_reject"
+        android:textColor="@android:color/holo_red_dark" />
+
+</RelativeLayout>

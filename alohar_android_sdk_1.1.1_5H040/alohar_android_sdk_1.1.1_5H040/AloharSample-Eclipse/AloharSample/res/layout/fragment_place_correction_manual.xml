@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="center"
+    android:padding="@dimen/listitem_padding">
+
+    <TextView
+        style="@style/TextViewDescription"
+        android:text="@string/intro_place_correction_manual"
+        android:id="@+id/introduction_place_correction" />
+
+    <EditText
+        android:id="@+id/place_details_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/introduction_place_correction"
+        android:layout_marginLeft="@dimen/listitem_padding"
+        android:layout_marginRight="@dimen/listitem_padding"
+        android:layout_marginTop="@dimen/listitem_padding"
+        android:padding="@dimen/listitem_padding"
+        android:hint="@string/place_correction_manual_hint_placename"
+        android:textSize="@dimen/testsize_editbox"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/place_details_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/place_details_name"
+        android:layout_marginLeft="@dimen/listitem_padding"
+        android:layout_marginRight="@dimen/listitem_padding"
+        android:layout_marginTop="@dimen/listitem_padding"
+        android:padding="@dimen/listitem_padding"
+        android:hint="@string/place_correction_manual_hint_placeaddress"
+        android:textSize="@dimen/testsize_editbox"/>
+
+</RelativeLayout>

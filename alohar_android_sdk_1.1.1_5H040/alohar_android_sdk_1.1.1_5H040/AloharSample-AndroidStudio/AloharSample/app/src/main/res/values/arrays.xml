@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<resources>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >UserStays</item>
+        <item >Places</item>
+        <item >Real-time Events</item>
+        <item >About</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_stays_list</item>
+        <item>@drawable/ic_places</item>
+        <item>@drawable/ic_motion</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+
+    <string-array name="place_correction_choice_array">
+        <item >@string/place_correction_option_manual</item>
+        <item >@string/place_correction_option_candidates</item>
+    </string-array>
+
+</resources>

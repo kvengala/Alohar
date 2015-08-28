@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:layout_margin="8dp">
+
+    <TextView
+        style="@style/TextViewAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_version_label_textview"
+        android:text="@string/about_alohar_sample_app_version_label" />
+
+    <TextView
+        android:id="@+id/app_version_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewAbout"
+        android:layout_toRightOf="@+id/app_version_label_textview"
+        android:layout_alignBaseline="@+id/app_version_label_textview"
+        android:text="x.y.z abcde"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewAbout"
+        android:id="@+id/sdk_version_label_textview"
+        android:layout_below="@+id/app_version_textview"
+        android:text="@string/about_alohar_sdk_version_label" />
+
+    <TextView
+        android:id="@+id/sdk_version_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewAbout"
+        android:text="x.y.z abcde"
+        android:layout_toRightOf="@+id/sdk_version_label_textview"
+        android:layout_alignBaseline="@+id/sdk_version_label_textview" />
+
+    <TextView
+        android:id="@+id/app_id_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewAbout"
+        android:layout_below="@+id/sdk_version_label_textview"
+        android:text="@string/about_alohar_app_id_label" />
+
+    <TextView
+        android:id="@+id/app_id_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewAbout"
+        android:text="xxx"
+        android:layout_toRightOf="@+id/app_id_label_textview"
+        android:layout_alignBaseline="@+id/app_id_label_textview" />
+
+    <TextView
+        android:id="@+id/legal_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewAbout"
+        android:text="@string/about_alohar_legal"
+        android:autoLink="web"
+        android:layout_below="@+id/app_id_label_textview"/>
+
+    <TextView
+        android:id="@+id/privacy_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewAbout"
+        android:text="@string/about_alohar_privacy"
+        android:autoLink="web"
+        android:layout_below="@+id/legal_textview"/>
+
+
+    <TextView
+        style="@style/TextViewLabel"
+        android:id="@+id/copyright_textview"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/privacy_textview"
+        android:text="@string/about_alohar_copyright_text" />
+
+</RelativeLayout>

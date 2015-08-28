@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<resources>
+
+    <string name="app_name">Alohar Sample</string>
+
+    <!-- login/register -->
+    <string name="login_uid_hint">Copy Alohar UID here</string>
+    <string name="login_button">LOG IN</string>
+    <string name="login_valid_uid">Please input a valid UID</string>
+    <string name="login_sdk_version">%1$s - SDK v%2$s</string>
+    <string name="or_label">- OR -</string>
+    <string name="register_button">REGISTER A NEW USER</string>
+    <string name="aloha">ALOHA</string>
+
+    <!-- drawer menu Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- home fragment -->
+    <string name="uid_label">Alohar UID</string>
+    <string name="context_monitoring_label">Start/Stop Context Monitoring</string>
+    <string name="context_monitoring_text">Context Monitoring</string>
+    <string name="context_monitoring_start">Start</string>
+    <string name="context_monitoring_stop">Stop</string>
+    <string name="current_location_label">Current Location (latitude, longitude)</string>
+    <string name="current_location_default">No Current Location</string>
+    <string name="last_known_location_label">Last Known Location (latitude, longitude)</string>
+    <string name="last_known_location_default">Unknown</string>
+    <string name="get_last_known_location_button">GET LAST KNOWN LOCATION</string>
+    <string name="current_user_stay_label">Current User Stay</string>
+    <string name="current_user_stay_default">No Current Stay</string>
+    <string name="periodic_upload_wifi_only_label">Upload Context Data Periodically Only On Wi-Fi</string>
+    <string name="periodic_upload_wifi_only_text">Periodic upload only on Wi-Fi</string>
+    <string name="upload_label">Upload Context Data</string>
+    <string name="upload_button">UPLOAD NOW</string>
+    <string name="logout_label">Log Out</string>
+    <string name="logout_button">LOGOUT</string>
+    <string name="null_string">null</string>
+
+    <string name="number_of_place_candidates">Nearby Place Candidates Found :  %1$d</string>
+    <string name="number_of_userstays"> Total User Stays found : %1$d</string>
+    <string name="click_to_see_stay_actions">CLICK FOR USERSTAY ACTIONS</string>
+    <string name="place_correction_cancelled">Place correction cancelled.</string>
+    <string name="place_correction_success">Place correction successful.</string>
+    <string name="place_correction_failed">Place correction failed. Error: %1$s</string>
+    <string name="place_correction_futile_same_place">Same as place in current UserStay. Correction futile!</string>
+    <string name="place_label_string">place:</string>
+    <string name="action_menu_done">DONE</string>
+    <string name="action_menu_cancel">CANCEL</string>
+    <string name="place_correction_failed_placename_empty"> Place name cannot be empty. Enter a place name.</string>
+    <string name="place_correction_failed_placeaddress_empty">Place address cannot be empty. Enter a valid address.</string>
+    <string name="place_correction_address_entry_geocode_error">Address look up failed. Place correction aborted!</string>
+    <string name="place_correction_option_manual">Manually Edit Place</string>
+    <string name="place_correction_option_candidates">Select From Nearby Places</string>
+    <string name="place_correction_candidates_list_text">Correct by selecting from nearby places below and hit \"DONE\":</string>
+    <string name="place_correction_manual_text">Correct by editing name and address of the place for this stay below and hit \"DONE\":</string>
+    <string name="place_correction_manual_hint_placename">Place Name here</string>
+    <string name="place_correction_manual_hint_placeaddress">Valid Address here</string>
+    <string name="place_correction_choose_method">Choose place correction method</string>
+    <string name="place_correction_not_required">No Correction Needed:Place details same as that selected from stay</string>
+    <string name="userstay_context_menu_title">UserStay Actions</string>
+    <string name="userstay_action_correction">Correct UserStay</string>
+    <string name="userstay_action_deletion">Delete UserStay</string>
+    <string name="userstay_deletion_confirmation_title">Delete UserStay?</string>
+    <string name="userstay_deletion_confirmation_message">This will remove the UserStay item from your UserStays. Proceed to delete UserStay? </string>
+    <string name="userstay_deletion_cancelled">UserStay Deletion Cancelled.</string>
+    <string name="userstay_deletion_in_progress">Deleting UserStay&#8230;</string>
+    <string name="userstay_deletion_success_msg">UserStay Deletion Success.</string>
+    <string name="userstay_deletion_failure_msg">UserStay Deletion Failed.</string>
+    <string name="userstay_deletion_not_userstay_object">UserStay Deletion Error : Not a UserStay object, cannot delete.</string>
+    <string name="userstay_start_time_label">Start Time (click to change)</string>
+    <string name="userstay_end_time_label">End Time (click to change)</string>
+    <string name="userstay_error">User Stays Error : %1$s</string>
+    <string name="action_dialog_yes">Yes</string>
+    <string name="action_dialog_no">No</string>
+    <string name="action_accept">Accept</string>
+    <string name="action_reject">Reject</string>
+
+    <string name="places_suggestion_action_heading_text">Confirm the place suggestion. You can edit the place name to set your own name.</string>
+    <string name="places_suggestion_still_determining_home">Still determining home suggestion. This may take a few days depending on user behavior.</string>
+    <string name="places_suggestion_still_determining_work">Still determining work suggestion. This may take a few days depending on user behavior.</string>
+    <string name="places_suggestion_home">Home Suggestion</string>
+    <string name="places_suggestion_work">Work Suggestion</string>
+    <string name="places_home">Home</string>
+    <string name="places_work">Work</string>
+    <string name="places_error">Important Places Error : %1$s</string>
+    <string name="places_suggestion_actions_dialog_title">Confirm Place Suggestion</string>
+    <string name="places_unconfirmed">(Unconfirmed - Click to accept/reject suggestion)</string>
+    <string name="places_with_most_userstays">Places with most UserStays</string>
+    <string name="places_suggestion_reject_success"> Success! Place suggestion rejected.</string>
+    <string name="places_suggestion_accept_success"> Success! Place suggestion confirmed.</string>
+    <string name="places_suggestion_action_empty_place">Error! Place suggestion empty!</string>
+    <string name="places_suggestion_action_hint_placename">(Enter place name)</string>
+    <string name="places_suggestion_action_hint_placeaddress">(Place address here)</string>
+    <string name="places_suggestions_error">Important Place Suggestions Error : %1$s</string>
+    <string name="places_click_to_see_suggestions">CLICK TO SEE PLACE SUGGESTIONS</string>
+    <string name="places_home_determining_or_confirmation_pending">HOME: Determining suggestions or suggestion confirmation is pending.\nCheck link above for Home suggestions."</string>
+    <string name="places_workplace_determining_or_confirmation_pending">WORKPLACES: Determining suggestions or suggestion confirmation is pending.\nCheck link above for WorkPlace suggestions."</string>
+    <string name="places_moststayedplaces_determining">MOST STAYED PLACES: Still determining. No UserStays identified yet."</string>
+    <string name="places_unknown_group_places_not_found">Error: Unknown place group,  places cannot be found.</string>
+
+    <string name="about_alohar_sdk_version_label">Alohar SDK</string>
+    <string name="about_alohar_app_id_label">AppId </string>
+    <string name="about_alohar_legal">Legal</string>
+    <string name="about_alohar_privacy">Privacy</string>
+    <string name="about_alohar_copyright_text">©2010-2015 Alohar Mobile, Inc.</string>
+    <string name="about_alohar_sample_app_version_label">Alohar Sample</string>
+
+    <string name="realtime_event_notification_switch_label">Enable/Disable Notification On Events</string>
+    <string name="realtime_event_notification">Show Notification</string>
+    <string name="realtime_event_notifications_label">Arrivals, Departures and Userstays</string>
+    <string name="realtime_event_unknown">"Unknown event."</string>
+
+    <string name="sdk_notify_lbs_off">This is an example of the Alohar SDK notifying the client app that the minimum required Location system setting is turned off.</string>
+    <string name="sdk_notify_wifi_off">This is an example of the Alohar SDK notifying the client app that the required Wi-Fi system setting is turned off.</string>
+    <string name="sdk_notify_wifi_scanning_always_available_off">This is an example of the Alohar SDK notifying the client app that the minimum required Wi-Fi scanning always available system setting is turned off.</string>
+
+    <string name="intro_homepage_status">You can see the Alohar User ID created when you signed up and your current location. </string>
+    <string name="intro_homepage_settings">You can enable/disable context monitoring, set a non-real time mode by enabling \"Periodic upload only on Wi-Fi\". You can also manually upload context data collected in the device to the server by selecting \"UPLOAD NOW\".  </string>
+    <string name="intro_homepage_logout">Save your Alohar User ID from the \"Alohar UID\" section above to sign in again after you logout of your application.</string>
+    <string name="intro_loginregister">This application provides a simple way to see data about the places you visit during your day. Register/Log In to to see rich contextual data of your userstays and location.</string>
+    <string name="intro_userstays">UserStays shows you the last 7 days\' place visits and the nearby places.\nYou can edit the Start Time and End Time for another time range. Click the stay item to correct the stay or delete it. </string>
+    <string name="intro_place_correction_manual">Correct your userstay by editing name and address of the place for this stay below and hit \"DONE\"</string>
+    <string name="intro_place_correction_nearby">Correct your userstay by selecting from the list of nearby places below and hit \"DONE\"</string>
+    <string name="intro_places">Places stores your Home and Work locations and your frequently visited places.</string>
+    <string name="intro_realtime_events">Real-time events shows your arrivals, stays and departures as they happen.</string>
+    <string name="intro_place_suggestions">You can see suggestions for home and work here after using the application for a few days. Confirm your home and work when the suggestions appear, to populate your \"Home\" and \"Work\" in \"Places\" page.  </string>
+</resources>

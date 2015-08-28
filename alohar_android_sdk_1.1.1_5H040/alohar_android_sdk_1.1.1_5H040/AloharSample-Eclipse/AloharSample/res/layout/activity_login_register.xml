@@ -1,0 +1,82 @@
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/login_register_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewLabel"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="@string/aloha" />
+
+            <TextView
+                style="@style/TextViewDescription"
+                android:text="@string/intro_loginregister"
+                android:id="@+id/introduction"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/login_uid_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/login_uid_hint" />
+
+            <Button
+                style="@style/ButtonText"
+                android:id="@+id/login_button"
+                android:text="@string/login_button" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/or_label" />
+
+            <Button
+                style="@style/ButtonText"
+                android:id="@+id/register_button"
+                android:text="@string/register_button" />
+
+            <TextView
+                style="@style/TextViewLabel"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:text="powered by Alohar Mobile, Inc." />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/login_register_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="@dimen/listitem_padding" >
+
+	<!-- main content layout -->
+
+	<TextView
+		android:id="@+id/stay_details"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/textsize_listitem"/>
+
+	<TextView
+		android:id="@+id/stay_correction_link"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/click_to_see_stay_actions"
+		android:textColor="@color/text_heading"
+		android:textSize="@dimen/textsize_header1" />
+</LinearLayout>

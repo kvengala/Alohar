@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/listitem_padding" >
+
+    <TextView
+        style="@style/TextViewDescription"
+        android:text="@string/intro_place_suggestions"
+        android:id="@+id/introduction_place_suggestions"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        style="@style/TextViewLabel"
+        android:id="@+id/places_suggestions_status"
+        android:layout_below="@+id/introduction_place_suggestions"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/listitem_padding"
+        android:paddingRight="@dimen/listitem_padding" />
+    
+    
+    <ExpandableListView
+        android:id="@+id/places_suggestions_explistview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/places_suggestions_status"
+        android:layout_marginTop="10dp"
+        android:childDivider="@color/list_divider"
+        android:dividerHeight="1dp"/>
+
+</RelativeLayout>

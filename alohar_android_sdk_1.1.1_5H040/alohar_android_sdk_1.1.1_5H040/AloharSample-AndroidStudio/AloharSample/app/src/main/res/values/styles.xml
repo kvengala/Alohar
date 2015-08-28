@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="TextViewDescription">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/alohar_green</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/textsize_intro</item>
+        <item name="android:padding">@dimen/padding_intro</item>
+    </style>
+
+    <style name="TextViewLabel">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/alohar_blue</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/textsize_label</item>
+        <item name="android:padding">@dimen/padding_label</item>
+    </style>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/alohar_blue</item>
+        <item name="android:textSize">@dimen/textsize_header1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewAbout">
+        <item name="android:paddingLeft">@dimen/about_padding_left</item>
+        <item name="android:paddingRight">@dimen/about_padding_right</item>
+        <item name="android:paddingTop">@dimen/about_gap</item>
+        <item name="android:paddingBottom">@dimen/about_gap</item>
+        <item name="android:layout_marginBottom">@dimen/about_gap</item>
+        <item name="android:background">@color/alohar_green</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/textsize_about</item>
+    </style>
+
+</resources>

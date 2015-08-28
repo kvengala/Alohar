@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<resources>
+
+    <dimen name="textsize_listitem">12sp</dimen>
+    <dimen name="textsize_header1">14sp</dimen>
+    <dimen name="textsize_header2">16sp</dimen>
+    <dimen name="testsize_editbox">18sp</dimen>
+    <dimen name="textsize_button">16sp</dimen>
+    <dimen name="textsize_about">16sp</dimen>
+    <dimen name="textsize_button_small">14sp</dimen>
+    <dimen name="textsize_contextmenu_header">20sp</dimen>
+    <dimen name="padding_contextmenu_header">15dp</dimen>
+    <dimen name="listitem_padding">8dp</dimen>
+    <dimen name="about_page_padding">10dp</dimen>
+    <dimen name="textsize_intro">16sp</dimen>
+    <dimen name="padding_intro">10dp</dimen>
+    <dimen name="textsize_label">14sp</dimen>
+    <dimen name="padding_label">5dp</dimen>
+    <dimen name="about_padding_left">10dp</dimen>
+    <dimen name="about_padding_right">10dp</dimen>
+    <dimen name="about_gap">4dp</dimen>
+
+</resources>

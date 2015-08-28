@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010-2015 Alohar Mobile Inc.
+ * All Rights Reserved.
+ * Contains Proprietary, Confidential & Trade Secret Information of Alohar Mobile Inc.
+ */
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/listitem_padding" >
+
+	<TextView
+		style="@style/TextViewDescription"
+		android:text="@string/intro_userstays"
+		android:id="@+id/introduction_userstays" />
+
+	<RelativeLayout
+		android:id="@+id/staylist_startdate_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/listitem_padding"
+		android:layout_below="@+id/introduction_userstays">
+
+		<TextView
+			android:id="@+id/stayslist_startdate_picked"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:text="@string/userstay_start_time_label"
+			android:textSize="@dimen/textsize_listitem" />
+
+		<Button
+			style="@style/ButtonText"
+			android:id="@+id/stayslist_start_date_picker"
+			android:layout_width="wrap_content"
+			android:layout_height="36sp"
+			android:layout_below="@+id/stayslist_startdate_picked"
+			android:textSize="@dimen/textsize_button_small" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/staylist_enddate_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/listitem_padding"
+		android:layout_below="@+id/introduction_userstays">
+
+		<TextView
+			android:id="@+id/stayslist_enddate_picked"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:text="@string/userstay_end_time_label"
+			android:textSize="@dimen/textsize_listitem" />
+
+		<Button
+			style="@style/ButtonText"
+			android:id="@+id/stayslist_end_date_picker"
+			android:layout_width="wrap_content"
+			android:layout_height="36sp"
+			android:layout_below="@+id/stayslist_enddate_picked"
+			android:textSize="@dimen/textsize_button_small" />
+	</RelativeLayout>
+
+
+	<TextView
+		style="@style/TextViewLabel"
+		android:id="@+id/stays_title"
+		android:layout_below="@+id/staylist_enddate_container"
+		android:layout_marginBottom="5dp"
+		android:paddingLeft="@dimen/listitem_padding"
+		android:paddingRight="@dimen/listitem_padding"
+		android:text="@string/number_of_userstays"/>
+
+	<ListView
+		android:id="@+id/stays_listview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@+id/stays_title"
+		android:divider="@color/list_divider"
+		android:dividerHeight="1dp"
+		android:listSelector="@drawable/apptheme_list_selector_holo_light">
+	</ListView>
+
+</RelativeLayout>
