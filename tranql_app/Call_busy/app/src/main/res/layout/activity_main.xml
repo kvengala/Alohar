@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <fragment
+            android:id="@+id/frag_activity"
+            android:name="com.trnql_devpost.kashyap.callbusy.fragment_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            tools:layout="@layout/activity_fragment_activity" />
+
+        <fragment
+            android:id="@+id/frag_location"
+            android:name="com.trnql_devpost.kashyap.callbusy.activity_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            tools:layout="@layout/activity_activity_location" />
+
+        <fragment
+            android:id="@+id/frag_weather"
+            android:name="com.trnql_devpost.kashyap.callbusy.weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            tools:layout="@layout/activity_weather" />
+
+    </LinearLayout>
+</ScrollView>
