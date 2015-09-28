@@ -24,7 +24,7 @@ public class Login_activity extends AppCompatActivity {
                 new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
-                        setContentView(R.layout.activity_main);
+
                     }
 
                     @Override

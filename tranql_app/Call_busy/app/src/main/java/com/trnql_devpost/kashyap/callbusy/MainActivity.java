@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_login_activity);
+        setContentView(R.layout.activity_main);
     }
     //@Override
     protected void smartActivityChange(ActivityEntry userActivity) {
