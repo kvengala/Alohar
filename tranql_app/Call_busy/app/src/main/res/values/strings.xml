@@ -6,4 +6,6 @@
     <string name="title_activity_fragment_activity">fragment_activity</string>
     <string name="title_activity_activity_location">activity_location</string>
     <string name="title_activity_weather">weather</string>
+    <string name="facebook_app_id">154404898238384</string>
+    <string name="title_activity_login_activity">Login_activity</string>
 </resources>
