@@ -11,12 +11,12 @@
         android:scrollbars="vertical">
         <fragment
             android:id="@+id/frag_login"
-            android:name="com.trnql_devpost.kashyap.callbusy.activity_location"
+            android:name="com.trnql_devpost.kashyap.callbusy.Login_activity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             tools:layout="@layout/activity_login_activity" />
-        <fragment
+        <!--fragment
             android:id="@+id/frag_activity"
             android:name="com.trnql_devpost.kashyap.callbusy.fragment_activity"
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            tools:layout="@layout/activity_weather" />
+            tools:layout="@layout/activity_weather" /-->
 
     </LinearLayout>
 </ScrollView>
