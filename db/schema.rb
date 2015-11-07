@@ -11,10 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151106192338) do
+ActiveRecord::Schema.define(version: 20151107023429) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bbanks", force: :cascade do |t|
+    t.string   "name"
+    t.float    "long"
+    t.float    "lat"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "bloods", force: :cascade do |t|
+    t.string   "blood_type"
+    t.integer  "quantity"
+    t.integer  "price"
+    t.integer  "parent_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "bloods", ["parent_id"], name: "index_bloods_on_parent_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email"

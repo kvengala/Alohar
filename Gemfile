@@ -11,6 +11,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
+gem 'juggernaut', '~> 2.1', '>= 2.1.1'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'here_places'
@@ -36,6 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+	
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
