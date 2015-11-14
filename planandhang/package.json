@@ -1,0 +1,25 @@
+{
+  "name": "planandhang",
+  "version": "1.0.0",
+  "description": "find the best place to hangout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvengala/Devpost-projects.git"
+  },
+  "keywords": [
+    "Android",
+    "Events",
+    "hangout",
+    "maps"
+  ],
+  "author": "kashyap",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvengala/Devpost-projects/issues"
+  },
+  "homepage": "https://github.com/kvengala/Devpost-projects#readme"
+}
